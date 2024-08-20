@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/p
+                           http://www.springframework.org/schema/p/spring-p.xsd">
+                           
+                  
+                  <bean class="com.springcore.injection.property.reference.Address" id="777">
+                  <property name="apartmentName" value="Harihareshwar park"/>
+                  <property name="flatNo" value="602" />
+                  <property name="floorNo" value="6"></property>
+                  </bean>
+                  
+                  <bean class="com.springcore.injection.property.reference.Person" id="999">
+                  <property name="name" value="Shrikant"/>
+                  <property name="phoneNo" value="7796277757"/>
+                  <property name="qualification" value="BCA Graduate"/>
+                  
+                  <property name="address">
+                  <ref bean="777"/>
+                  </property>
+                  </bean>
+
+   
+
+</beans>

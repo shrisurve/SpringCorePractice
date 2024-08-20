@@ -1,0 +1,19 @@
+package com.springcore.injection.collection.standalone;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class CollectionStandaloneService 
+{
+	public static void main(String[] args) 
+	{
+		AbstractApplicationContext context=
+				new ClassPathXmlApplicationContext("com/springcore/injection/collection/standalone/collectionstandalone.xml");
+	
+		CollectionStandalone standalone = context.getBean("collection1",CollectionStandalone.class);
+		CollectionStandalone standalone2 = context.getBean("collection1",CollectionStandalone.class);
+		context.registerShutdownHook();
+		System.out.println(standalone.hashCode());
+		System.out.println(standalone2.hashCode());
+	}
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.springcore.injection.property.Student"/>
+    <fullyQualifiedTypeName name="com.springcore.injection.constructor.Employee"/>
+    <fullyQualifiedTypeName name="com.springcore.injection.constructor.Teacher"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.springcore.injection.collection.CollectionInjection"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.springcore.injection.property.reference.Address"/>
+    <fullyQualifiedTypeName name="com.springcore.injection.collection.standalone.CollectionStandalone"/>
+    <fullyQualifiedTypeName name="com.springcore.injection.collection.DemoCollectionInjection"/>
+    <fullyQualifiedTypeName name="com.springcore.injection.collection.standalone.PuneStandalone"/>
+    <fullyQualifiedTypeName name="com.springcore.autowiring.xml.Address"/>
+    <fullyQualifiedTypeName name="com.springcore.autowiring.xml.Emp"/>
+    <fullyQualifiedTypeName name="com.springcore.autowiring.xml.Narhe"/>
+    <fullyQualifiedTypeName name="com.springcore.autowiring.xml.Pune"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.springcore.stereotype.Student"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+</qualifiedTypeNameHistroy>

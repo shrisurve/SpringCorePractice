@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/p
+                           http://www.springframework.org/schema/p/spring-p.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+
+	<!-- collection standalone list -->
+
+	<util:list list-class="java.util.ArrayList" id="num1">
+		<value>7</value>
+		<value>9</value>
+		<value>3</value>
+		<value>1</value>
+		<value>2</value>
+
+	</util:list>
+
+	<!-- collection standalone set -->
+
+	<util:set set-class="java.util.HashSet" id="name1">
+		<value>Teju</value>
+		<value>Guddi</value>
+		<value>Shital</value>
+		<value>Anju</value>
+	</util:set>
+
+	<!-- collection standalone map -->
+	<util:map map-class="java.util.HashMap" id="map1">
+		<entry key="123" value="xyz" />
+		<entry key="543" value="abc" />
+		<entry key="675" value="lmn" />
+	</util:map>
+
+
+	<bean
+		class="com.springcore.injection.collection.standalone.CollectionStandalone"
+		id="collection1" init-method="start">
+		<property name="numbers" ref="num1" />
+		<property name="names" ref="name1" />
+		<property name="map" ref="map1" />
+	</bean>
+
+
+
+
+</beans>

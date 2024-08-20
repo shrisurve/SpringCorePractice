@@ -1,0 +1,10 @@
+package com.springcore.injection.constructor;
+
+public class Teacher 
+{
+	private int teacherId;
+	private String teacherName;
+	private double teacherSalary;
+	
+	
+}

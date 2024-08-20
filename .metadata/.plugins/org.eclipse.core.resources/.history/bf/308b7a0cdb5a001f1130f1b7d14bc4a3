@@ -1,0 +1,6 @@
+package com.springcore.injection.collection.standalone;
+
+public class PuneStandaloneService 
+{
+	
+}

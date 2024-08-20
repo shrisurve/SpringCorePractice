@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/p
+                           http://www.springframework.org/schema/p/spring-p.xsd">
+                           
+                         <bean class="com.springcore.injection.collection.DemoCollectionInjection" name="numbers1">
+                         <property name="numbers">
+                         <list>
+                         <value>97</value>
+                         <value>98</value>
+                         <value>99</value>
+                         <value>95</value>
+                         </list>
+                         </property>
+                         </bean>
+                 
+
+   
+
+</beans>

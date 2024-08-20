@@ -1,0 +1,6 @@
+package com.springcore.autowiring.xml;
+
+public class PuneNarheService 
+{
+	
+}

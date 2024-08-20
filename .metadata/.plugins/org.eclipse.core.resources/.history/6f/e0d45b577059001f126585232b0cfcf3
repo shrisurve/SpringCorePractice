@@ -1,0 +1,5 @@
+package com.springcore.injection.property.reference;
+
+public class Address {
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define a bean with id 'myBean' and class 'com.example.MyBean' -->
+    <bean id="myBean" class="com.example.MyBean">
+        <!-- Property injection -->
+        <property name="propertyName" value="propertyValue"/>
+        <!-- Constructor injection -->
+        <constructor-arg value="constructorArgValue"/>
+    </bean>
+
+    <!-- Define another bean with id 'anotherBean' and class 'com.example.AnotherBean' -->
+    <bean id="anotherBean" class="com.example.AnotherBean">
+        <!-- Inject dependency on 'myBean' -->
+        <property name="myBean" ref="myBean"/>
+    </bean>
+
+</beans>
