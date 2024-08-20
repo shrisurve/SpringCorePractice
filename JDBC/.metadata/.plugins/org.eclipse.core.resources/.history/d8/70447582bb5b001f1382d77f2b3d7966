@@ -1,0 +1,15 @@
+package com.jdbc.simple;
+import java.sql.*;
+public class FirstJdbc 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			
+		}catch(Exception e)
+		{
+			
+		}
+	}
+}

@@ -1,0 +1,28 @@
+package com.jdbc.simple;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class InsertDynamicallyData 
+{
+	public static void main(String[] args) 
+	{
+		try {
+				//loading the driver
+				Class.forName("com.mysql.cj.jdbc.Driver");
+				
+				
+				//creating a connection
+				Connection connection=
+						DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","root");
+				
+				//create query
+				
+				String q="insert into employee(empName,empCity) values(?,?)";
+				
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package com.jdbc.simple;
+
+public class FirstJdbc 
+{
+	try
+	{
+		
+	}catch(Exception e)
+	{
+		
+	}
+}

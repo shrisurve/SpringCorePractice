@@ -1,0 +1,26 @@
+package com.jdbc.practice;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+public class Jdbc3 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","root");
+			
+			String q="insert into Company(compId,compName) values(?,?)";
+			
+			PreparedStatement statement=connection.prepareStatement(q);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

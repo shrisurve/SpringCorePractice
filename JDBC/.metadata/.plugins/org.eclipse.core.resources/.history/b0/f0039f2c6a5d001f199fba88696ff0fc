@@ -1,0 +1,14 @@
+package com.jdbc.simple;
+
+public class SelectingData2 
+{
+	public static void main(String[] args) 
+	{
+		try {
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

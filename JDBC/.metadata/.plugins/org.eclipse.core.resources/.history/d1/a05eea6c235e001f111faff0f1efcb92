@@ -1,0 +1,9 @@
+package com.jdbc.studentdao;
+
+import com.jdbc.studentdto.Student;
+
+public interface StudentDao 
+{
+	public void insert(Student student);
+	public void update(Student student);
+}

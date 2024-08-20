@@ -1,0 +1,13 @@
+package com.jdbc.employeecontroller;
+
+import com.jdbc.employeedao.EmployeeDao;
+import com.jdbc.employeedao.EmployeeDaoImpl;
+
+public class EmployeeService 
+{
+	public static void main(String[] args) 
+	{
+		EmployeeDao dao=new EmployeeDaoImpl();
+		dao.getConnection();
+	}
+}

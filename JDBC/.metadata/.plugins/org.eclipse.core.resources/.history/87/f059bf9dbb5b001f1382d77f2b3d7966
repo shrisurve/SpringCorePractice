@@ -1,0 +1,22 @@
+package com.jdbc.simple;
+import java.sql.*;
+public class FirstJdbc 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			//load the driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			//creating a connection
+			
+			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","root");
+			
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

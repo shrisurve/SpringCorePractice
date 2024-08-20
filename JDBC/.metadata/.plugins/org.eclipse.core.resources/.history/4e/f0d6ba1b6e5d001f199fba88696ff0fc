@@ -1,0 +1,24 @@
+package com.jdbc.simple;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class InsertIntoStudent 
+{
+	public static void main(String[] args) 
+	{
+		try {
+			
+
+			Connection connection=ConnectionProvider.getConnection();
+			
+			String q="insert into student(name,address) values(?,?)";
+			
+			PreparedStatement pstmt=connection.prepareStatement(q);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

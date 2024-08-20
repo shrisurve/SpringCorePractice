@@ -1,0 +1,26 @@
+package com.jdbc.simple;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class SelectingData 
+{
+	public static void main(String[] args) 
+	{
+		try 
+		{
+			Connection connection=ConnectionProvider.getConnection();
+			
+			String q="select * from employee";
+			
+			Statement statement = connection.createStatement();
+			
+			ResultSet resultSet=statement.executeQuery(q);
+			
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

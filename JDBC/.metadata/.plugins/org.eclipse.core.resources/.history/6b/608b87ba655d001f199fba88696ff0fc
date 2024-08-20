@@ -1,0 +1,33 @@
+package com.jdbc.simple;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.sql.Connection;
+
+public class UpdatingData 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			Connection connection=ConnectionProvider.getConnection();
+			
+			String q="update employee set empName=?,empCity=? where empId=?";
+			
+			BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+			
+			System.out.println("Enter the New Name:- ");
+			String name=reader.readLine();
+			
+			System.out.println("Enter the New City:- ");
+			String city=reader.readLine();
+			
+			System.out.println("Enter the Id:- ");
+			int id=Integer.parseInt(reader.readLine());
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

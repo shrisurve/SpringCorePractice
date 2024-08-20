@@ -1,0 +1,9 @@
+package com.jdbc.simple;
+
+public class SelectingData 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

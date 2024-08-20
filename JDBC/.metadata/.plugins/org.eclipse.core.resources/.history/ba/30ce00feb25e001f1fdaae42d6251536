@@ -1,0 +1,20 @@
+package com.jdbc.studentcontroller;
+
+import com.jdbc.studentdao.StudentDao;
+import com.jdbc.studentdao.StudentDaoImpl;
+import com.jdbc.studentdto.Student;
+
+public class StudentService 
+{
+	public static void main(String[] args) {
+		
+		StudentDao dao=new StudentDaoImpl();
+ 
+		//dao.create();
+		Student student=new Student();
+		student.setStudentId(1);
+		student.setStudentName("Annanya");
+		student.setStudentAddress("Pune");
+		
+	}
+}

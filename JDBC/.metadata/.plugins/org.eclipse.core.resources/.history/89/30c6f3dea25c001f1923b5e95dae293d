@@ -1,0 +1,21 @@
+package com.jdbc.practice;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Jdbc1 
+{
+	public static void main(String[] args) 
+	{
+		try {
+			//load the driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			//crete the connection
+			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","root");
+			
+			System.out.println("Connection created successfully");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
